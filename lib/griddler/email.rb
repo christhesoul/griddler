@@ -16,7 +16,7 @@ module Griddler
       @body = extract_body
       @raw_text = params[:text]
       @raw_html = params[:html]
-      @raw_body = @raw_text || @raw_html
+      @raw_body = params[:raw_body]
 
       @headers = extract_headers
 
